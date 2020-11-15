@@ -23,6 +23,8 @@ body{
 		width: 100%;
 		height: auto;
 		
+		margin: 0;
+		padding: 0;
 		border-radius: 30px;
 	}
 	
@@ -30,7 +32,7 @@ body{
 		background: url('../Resources/bg-mobile.jpg');
 		width: 100%;
 		max-width: 1920px;
-		height: 80px;
+		height: 90px;
 		
 		display: block;
 		overflow: hidden;
@@ -39,16 +41,17 @@ body{
 		padding: 0;
 		
 		border-radius: 15px;
+		
+		animation: fuse 5s infinite;
+		animation-direction: alternate;
 	}
 	
 	 @keyframes fuse{
-		0% {background: url('../Resources/bg-desk.jpg');}
-		100% {background: url('../Resources/bg-desk1.jpg');}
+		0% {background: url('../Resources/bg-mobile.jpg');}
+		100% {background: url('../Resources/bg-mobile1.jpg');}
 	}
 	
 	#separator hr{
-		position: relative;
-		top: -0.2em;
 		border: 0.1em solid rgb(64, 128, 128);
 	    border-radius: 5px;
 		animation: stroll 5s infinite;
@@ -69,12 +72,12 @@ body{
 		width: 95%;
 		border: solid 1px #D3D3D3;
 		border-left: 6px solid seagreen;
-		padding: 0.3em;
+		padding: 1em;
 		border-radius: 10px;
-		box-shadow: 5px 5px 10px rgba(50, 50, 50, 0.8);
+		box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.7);
 		
-		background: rgb(200, 200, 200);
-		text-align: center;
+		background:#f9f5ec;
+		text-align: left;
 		font-family: "Amarante";
 		
 		animation: blend 5s infinite;
@@ -96,6 +99,115 @@ body{
 	
 	.card p{
 		font-size: 1.5em;
+	}
+	
+	.card p::before{
+		content: "F";
+		
+		font-family: "Amarante";
+		color: tomato;
+		font-size: 2em;
+	}
+	
+	input[type=text] {
+		outline: none; /*Removes outline on focus.*/
+		
+		margin: auto 0.5em;
+		padding: 0.5em;
+		border: none;
+		
+		letter-spacing: 0.1em;
+		font-family: "Allan";
+		font-size: 1.2em;
+		font-weight: bold;
+		color: tomato;
+		
+		background: #f9f5ec;
+		border-bottom: 3px solid  /*#e1ad01*/ #4787ff;
+		border-radius: 1px;
+		
+		transition: width 0.4s ease-in-out;
+	}
+	
+	input[type=text]:focus{
+		width: 70%;
+	}
+	
+	input[type=password] {
+		outline: none; /*Removes outline on focus.*/
+		
+		margin: auto 0.5em;
+		padding: 0.5em;
+		border: none;
+		
+		letter-spacing: 0.1em;
+		font-family: "Allan";
+		font-size: 1.2em;
+		font-weight: bold;
+		color: tomato;
+		
+		background: #f9f5ec;
+		border-bottom: 3px solid #e1ad01;
+		border-radius: 1px;
+		
+		transition: width 0.4s ease-in-out;
+	}
+	
+	input[type=password]:focus{
+		width: 50%;
+	}
+	
+	select {
+		outline: none; /*Removes outline on focus.*/
+		
+		margin: auto 0.5em;
+		padding: 0.5em;
+		border: none;
+		
+		letter-spacing: 0.1em;
+		font-family: "Amarante";
+		font-size: 1.2em;
+		font-weight: bold;
+		color: #4787ff;
+		
+		background: #f9f5ec;
+		border-bottom: 3px solid #ff073a;
+		border-radius: 2px;
+		
+		transition: width 0.4s ease-in-out;
+	}
+	
+	select:focus{
+		border-bottom: 3px solid seagreen;
+		width: 40%;
+	}
+	
+	button[type=submit]{
+		font-family: "Amarante";
+		font-weight: bold;
+		font-size: 1.5em;
+		
+		border: none;
+		border-left: 4px solid seagreen;
+		margin: auto;
+		padding: 0.5em 0.5em;
+		border-radius: 10px;
+		color: #f9f5ec;
+		background: #F08080;
+	}
+	
+	button[type=submit]:hover{
+		font-family: "Amarante";
+		font-weight: bold;
+		font-size: 1.5em;
+		
+		border: none;
+		border-left: 4px solid #4787ff;
+		margin: auto;
+		padding: 0.5em 0.5em;
+		border-radius: 10px;
+		color: #FF7F50	;
+		background:#98FB98;	
 	}
 }
 
