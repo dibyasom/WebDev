@@ -7,32 +7,13 @@ body{
 	width: auto;
 }
 
+/*Landscape mode*/
 @media only screen and (max-width: 1920px) {
-	html{
-		background: #D3D3D3;
-		width: 100%;
-		height: auto;
-	}
-	
-	.head{
-		position: -webkit-sticky;
-		position: sticky;
-		top: 0;
-		
-		background: #D3D3D3;
-		width: 100%;
-		height: auto;
-		
-		margin: 0;
-		padding: 0;
-		border-radius: 30px;
-	}
-	
 	.header{	
 		background: url('../Resources/bg-mobile.jpg');
 		width: 100%;
 		max-width: 1920px;
-		height: 90px;
+		height: 80px;
 		
 		display: block;
 		overflow: hidden;
@@ -47,11 +28,13 @@ body{
 	}
 	
 	 @keyframes fuse{
-		0% {background: url('../Resources/bg-mobile.jpg');}
-		100% {background: url('../Resources/bg-mobile1.jpg');}
+		0% {background: url('../Resources/bg-desk.jpg');}
+		100% {background: url('../Resources/bg-desk1.jpg');}
 	}
 	
 	#separator hr{
+		position: relative;
+		top: -0.2em;
 		border: 0.1em solid rgb(64, 128, 128);
 	    border-radius: 5px;
 		animation: stroll 5s infinite;
@@ -63,175 +46,12 @@ body{
 		25%  {border: 0.15em solid #0681d6;}
 		50%  {border: 0.15em solid #649b58;}		
 		75%  {border: 0.15em solid #f49a52;}				
-		100% {border: 0.15em solid #FFA500;}	
-			
-	}
-	
-	.card{		
-		margin: 2em auto;
-		width: 95%;
-		border: solid 1px #D3D3D3;
-		border-left: 6px solid seagreen;
-		padding: 1em;
-		border-radius: 10px;
-		box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.7);
-		
-		background:#f9f5ec;
-		text-align: left;
-		font-family: "Amarante";
-		
-		animation: blend 5s infinite;
-		animation-direction: alternate;
-	}
-	
-	@keyframes blend{
-		0%   {border-left: 6px solid #1f262e;}	
-		25%  {border-left: 6px solid #0681d6;}
-		50%  {border-left: 6px solid #649b58;}		
-		75%  {border-left: 6px solid #f49a52;}				
-		100% {border-left: 6px solid #FFA500;}	
-	}
-	
-	.card h2{
-		font-size: 2em;
-		color: rgb(64, 100, 128);	
-	}
-	
-	.card p{
-		font-size: 1.5em;
-	}
-	
-	.card p::before{
-		content: "F";
-		
-		font-family: "Amarante";
-		color: tomato;
-		font-size: 2em;
-	}
-	
-	input[type=text] {
-		outline: none; /*Removes outline on focus.*/
-		
-		margin: auto 0.5em;
-		padding: 0.5em;
-		border: none;
-		
-		letter-spacing: 0.1em;
-		font-family: "Allan";
-		font-size: 1.2em;
-		font-weight: bold;
-		color: tomato;
-		
-		background: #f9f5ec;
-		border-bottom: 3px solid  /*#e1ad01*/ #4787ff;
-		border-radius: 1px;
-		
-		transition: width 0.4s ease-in-out;
-	}
-	
-	input[type=text]:focus{
-		width: 70%;
-	}
-	
-	input[type=password] {
-		outline: none; /*Removes outline on focus.*/
-		
-		margin: auto 0.5em;
-		padding: 0.5em;
-		border: none;
-		
-		letter-spacing: 0.1em;
-		font-family: "Allan";
-		font-size: 1.2em;
-		font-weight: bold;
-		color: tomato;
-		
-		background: #f9f5ec;
-		border-bottom: 3px solid #e1ad01;
-		border-radius: 1px;
-		
-		transition: width 0.4s ease-in-out;
-	}
-	
-	input[type=password]:focus{
-		width: 50%;
-	}
-	
-	select {
-		outline: none; /*Removes outline on focus.*/
-		
-		margin: auto 0.5em;
-		padding: 0.5em;
-		border: none;
-		
-		letter-spacing: 0.1em;
-		font-family: "Amarante";
-		font-size: 1.2em;
-		font-weight: bold;
-		color: #4787ff;
-		
-		background: #f9f5ec;
-		border-bottom: 3px solid #ff073a;
-		border-radius: 2px;
-		
-		transition: width 0.4s ease-in-out;
-	}
-	
-	select:focus{
-		border-bottom: 3px solid seagreen;
-		width: 40%;
-	}
-	
-	button[type=submit]{
-		font-family: "Amarante";
-		font-weight: bold;
-		font-size: 1.5em;
-		
-		border: none;
-		border-left: 4px solid seagreen;
-		margin: auto;
-		padding: 0.5em 0.5em;
-		border-radius: 10px;
-		color: #f9f5ec;
-		background: #F08080;
-	}
-	
-	button[type=submit]:hover{
-		font-family: "Amarante";
-		font-weight: bold;
-		font-size: 1.5em;
-		
-		border: none;
-		border-left: 4px solid #4787ff;
-		margin: auto;
-		padding: 0.5em 0.5em;
-		border-radius: 10px;
-		color: #FF7F50	;
-		background:#98FB98;	
+		100% {border: 0.15em solid #FFA500;}			
 	}
 }
 
+/*Portrait mode*/
 @media only screen and (max-width: 1080px) {
-	html{
-		background: #D3D3D3;
-		width: 100%;
-		height: auto;
-	}
-	
-	.head{
-		position: -webkit-sticky;
-		position: sticky;
-		top: 0;
-		
-		background: #D3D3D3;
-		width: 100%;
-		height: auto;
-		
-		margin: 0;
-		padding: 0;
-		border-radius: 30px;
-	}
-	
 	.header{	
 		background: url('../Resources/bg-mobile.jpg');
 		width: 100%;
@@ -254,7 +74,7 @@ body{
 		0% {background: url('../Resources/bg-mobile.jpg');}
 		100% {background: url('../Resources/bg-mobile1.jpg');}
 	}
-	
+
 	#separator hr{
 		border: 0.1em solid rgb(64, 128, 128);
 	    border-radius: 5px;
@@ -267,151 +87,171 @@ body{
 		25%  {border: 0.15em solid #0681d6;}
 		50%  {border: 0.15em solid #649b58;}		
 		75%  {border: 0.15em solid #f49a52;}				
-		100% {border: 0.15em solid #FFA500;}	
-			
+		100% {border: 0.15em solid #FFA500;}				
 	}
-	
-	.card{		
-		margin: 2em auto;
-		width: 95%;
-		border: solid 1px #D3D3D3;
-		border-left: 6px solid seagreen;
-		padding: 1em;
-		border-radius: 10px;
-		box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.7);
-		
-		background:#f9f5ec;
-		text-align: left;
-		font-family: "Amarante";
-		
-		animation: blend 5s infinite;
-		animation-direction: alternate;
-	}
-	
-	@keyframes blend{
-		0%   {border-left: 6px solid #1f262e;}	
-		25%  {border-left: 6px solid #0681d6;}
-		50%  {border-left: 6px solid #649b58;}		
-		75%  {border-left: 6px solid #f49a52;}				
-		100% {border-left: 6px solid #FFA500;}	
-	}
-	
-	.card h2{
-		font-size: 2em;
-		color: rgb(64, 100, 128);	
-	}
-	
-	.card p{
-		font-size: 1.5em;
-	}
-	
-	.card p::before{
-		content: "F";
-		
-		font-family: "Amarante";
-		color: tomato;
-		font-size: 2em;
-	}
-	
-	input[type=text] {
-		outline: none; /*Removes outline on focus.*/
-		
-		margin: auto 0.5em;
-		padding: 0.5em;
-		border: none;
-		
-		letter-spacing: 0.1em;
-		font-family: "Allan";
-		font-size: 1.2em;
-		font-weight: bold;
-		color: tomato;
-		
-		background: #f9f5ec;
-		border-bottom: 3px solid  /*#e1ad01*/ #4787ff;
-		border-radius: 1px;
-		
-		transition: width 0.4s ease-in-out;
-	}
-	
-	input[type=text]:focus{
-		width: 70%;
-	}
-	
-	input[type=password] {
-		outline: none; /*Removes outline on focus.*/
-		
-		margin: auto 0.5em;
-		padding: 0.5em;
-		border: none;
-		
-		letter-spacing: 0.1em;
-		font-family: "Allan";
-		font-size: 1.2em;
-		font-weight: bold;
-		color: tomato;
-		
-		background: #f9f5ec;
-		border-bottom: 3px solid #e1ad01;
-		border-radius: 1px;
-		
-		transition: width 0.4s ease-in-out;
-	}
-	
-	input[type=password]:focus{
-		width: 50%;
-	}
-	
-	select {
-		outline: none; /*Removes outline on focus.*/
-		
-		margin: auto 0.5em;
-		padding: 0.5em;
-		border: none;
-		
-		letter-spacing: 0.1em;
-		font-family: "Amarante";
-		font-size: 1.2em;
-		font-weight: bold;
-		color: #4787ff;
-		
-		background: #f9f5ec;
-		border-bottom: 3px solid #ff073a;
-		border-radius: 2px;
-		
-		transition: width 0.4s ease-in-out;
-	}
-	
-	select:focus{
-		border-bottom: 3px solid seagreen;
-		width: 40%;
-	}
-	
-	button[type=submit]{
-		font-family: "Amarante";
-		font-weight: bold;
-		font-size: 1.5em;
-		
-		border: none;
-		border-left: 4px solid seagreen;
-		margin: auto;
-		padding: 0.5em 0.5em;
-		border-radius: 10px;
-		color: #f9f5ec;
-		background: #F08080;
-	}
-	
-	button[type=submit]:hover{
-		font-family: "Amarante";
-		font-weight: bold;
-		font-size: 1.5em;
-		
-		border: none;
-		border-left: 4px solid #4787ff;
-		margin: auto;
-		padding: 0.5em 0.5em;
-		border-radius: 10px;
-		color: #FF7F50	;
-		background:#98FB98;	
-	}
-	
 }
+
+	
+html{
+	background: #D3D3D3;
+	width: 100%;
+	height: auto;
+}
+
+.head{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	
+	background: #D3D3D3;
+	width: 100%;
+	height: auto;
+	
+	margin: 0;
+	padding: 0;
+	border-radius: 30px;
+}
+
+.card{		
+	margin: 2em auto;
+	width: 95%;
+	border: solid 1px #D3D3D3;
+	border-left: 6px solid seagreen;
+	padding: 1em;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.7);
+	
+	background:#f9f5ec;
+	text-align: left;
+	font-family: "Amarante";
+	
+	animation: blend 5s infinite;
+	animation-direction: alternate;
+}
+
+@keyframes blend{
+	0%   {border-left: 6px solid #1f262e;}	
+	25%  {border-left: 6px solid #0681d6;}
+	50%  {border-left: 6px solid #649b58;}		
+	75%  {border-left: 6px solid #f49a52;}				
+	100% {border-left: 6px solid #FFA500;}	
+}
+
+.card h2{
+	font-size: 2em;
+	color: rgb(64, 100, 128);	
+}
+
+.card p{
+	font-size: 1.5em;
+}
+
+.card p::before{
+	content: "F";
+	
+	font-family: "Amarante";
+	color: tomato;
+	font-size: 2em;
+}
+
+input[type=text] {
+	outline: none; /*Removes outline on focus.*/
+	
+	margin: auto 0.5em;
+	padding: 0.5em;
+	border: none;
+	
+	letter-spacing: 0.1em;
+	font-family: "Allan";
+	font-size: 1.2em;
+	font-weight: bold;
+	color: tomato;
+	
+	background: #f9f5ec;
+	border-bottom: 3px solid  /*#e1ad01*/ #4787ff;
+	border-radius: 1px;
+	
+	transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus{
+	width: 70%;
+}
+
+input[type=password] {
+	outline: none; /*Removes outline on focus.*/
+	
+	margin: auto 0.5em;
+	padding: 0.5em;
+	border: none;
+	
+	letter-spacing: 0.1em;
+	font-family: "Allan";
+	font-size: 1.2em;
+	font-weight: bold;
+	color: tomato;
+	
+	background: #f9f5ec;
+	border-bottom: 3px solid #e1ad01;
+	border-radius: 1px;
+	
+	transition: width 0.4s ease-in-out;
+}
+
+input[type=password]:focus{
+	width: 50%;
+}
+
+select {
+	outline: none; /*Removes outline on focus.*/
+	
+	margin: auto 0.5em;
+	padding: 0.5em;
+	border: none;
+	
+	letter-spacing: 0.1em;
+	font-family: "Amarante";
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #4787ff;
+	
+	background: #f9f5ec;
+	border-bottom: 3px solid #ff073a;
+	border-radius: 2px;
+	
+	transition: width 0.4s ease-in-out;
+}
+
+select:focus{
+	border-bottom: 3px solid seagreen;
+	width: 40%;
+}
+
+button[type=submit]{
+	font-family: "Amarante";
+	font-weight: bold;
+	font-size: 1.5em;
+	
+	border: none;
+	border-left: 4px solid seagreen;
+	margin: auto;
+	padding: 0.5em 0.5em;
+	border-radius: 10px;
+	color: #f9f5ec;
+	background: #F08080;
+}
+
+button[type=submit]:hover{
+	font-family: "Amarante";
+	font-weight: bold;
+	font-size: 1.5em;
+	
+	border: none;
+	border-left: 4px solid #4787ff;
+	margin: auto;
+	padding: 0.5em 0.5em;
+	border-radius: 10px;
+	color: #FF7F50	;
+	background:#98FB98;	
+}
+
