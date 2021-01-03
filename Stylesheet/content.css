@@ -1,0 +1,37 @@
+.content-italics{
+    font-family: Amarante;
+    font-size: 2em;
+    color: #e1ad01;
+    font-style: italic;
+}
+
+.content-strikethrough{
+    font-family: Comic Sans MS;
+    font-size: 2em;
+    color: #649b58;
+    text-decoration: line-through;
+    text-decoration-color: #f49a52;
+}
+
+.ield{
+    border-top: 0.3em solid coral;
+    border-radius: 0.5em;
+    margin: 5em 0.5em;
+    padding: 0.5em 0em;
+}
+
+.text-field{
+    border-radius: 0.2em;
+}
+
+ol{
+    list-style: lower-roman;
+}
+
+ul{
+    list-style: square;
+}
+
+ol img{
+    max-width: 50em;
+}

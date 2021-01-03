@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59bb373d-0928-4192-b46a-728aaadd7546" name="Default Changelist" comment="" />
+    <list default="true" id="59bb373d-0928-4192-b46a-728aaadd7546" name="Default Changelist" comment="Binaries.">
+      <change afterPath="$PROJECT_DIR$/Stylesheet/content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stylesheet/meta-html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,10 +38,36 @@
       <updated>1609253399700</updated>
       <workItem from="1609253401771" duration="5000" />
       <workItem from="1609253737253" duration="46000" />
+      <workItem from="1609652238647" duration="2945000" />
+      <workItem from="1609667842108" duration="3108000" />
     </task>
+    <task id="LOCAL-00001" summary="Binaries.">
+      <created>1609652290256</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609652290256</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Binaries." />
+    <option name="LAST_COMMIT_MESSAGE" value="Binaries." />
   </component>
 </project>
