@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59bb373d-0928-4192-b46a-728aaadd7546" name="Default Changelist" comment="Binaries.">
-      <change afterPath="$PROJECT_DIR$/Stylesheet/content.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stylesheet/meta-html.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text.html" afterDir="false" />
+    <list default="true" id="59bb373d-0928-4192-b46a-728aaadd7546" name="Default Changelist" comment="Class and childs, CSS selectors.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stylesheet/content.css" beforeDir="false" afterPath="$PROJECT_DIR$/Stylesheet/content.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text.html" beforeDir="false" afterPath="$PROJECT_DIR$/text.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +20,19 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Resources" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -39,7 +45,7 @@
       <workItem from="1609253401771" duration="5000" />
       <workItem from="1609253737253" duration="46000" />
       <workItem from="1609652238647" duration="2945000" />
-      <workItem from="1609667842108" duration="3108000" />
+      <workItem from="1609667842108" duration="11574000" />
     </task>
     <task id="LOCAL-00001" summary="Binaries.">
       <created>1609652290256</created>
@@ -48,7 +54,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609652290256</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Class and childs, CSS selectors.">
+      <created>1609672736880</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609672736880</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,6 +81,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Binaries." />
-    <option name="LAST_COMMIT_MESSAGE" value="Binaries." />
+    <MESSAGE value="Class and childs, CSS selectors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Class and childs, CSS selectors." />
   </component>
 </project>

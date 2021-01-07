@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .content-italics{
     font-family: Amarante;
     font-size: 2em;
@@ -13,25 +16,111 @@
     text-decoration-color: #f49a52;
 }
 
-.ield{
-    border-top: 0.3em solid coral;
+.field{
+    background-image: url("../Resources/f-bg.jpg");
+    width: 95%;
+    height: auto;
+    border: 0.1em solid slategray;
+    border-top: 0.35em solid #ba89b6;
     border-radius: 0.5em;
-    margin: 5em 0.5em;
-    padding: 0.5em 0em;
+    margin: 5em auto;
+    padding: 0.5em 0.5em;
+}
+
+.field, .field::before{
+    content: " ";
 }
 
 .text-field{
     border-radius: 0.2em;
 }
 
-ol{
+li{
     list-style: lower-roman;
+    color: #0681d6;
 }
 
-ul{
-    list-style: square;
+li:nth-child(2n + 1){
+    color: #649b58;
 }
 
-ol img{
+ul img{
     max-width: 50em;
+}
+
+
+
+
+/*I have no idea what's this.'*/
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.ribbon {
+    font-size: 16px !important;
+    /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+    width: 60%;
+
+    position: relative;
+    background: #ba89b6;
+    color: #fff;
+    text-align: center;
+    padding: 1em 2em; /* Adjust to suit */
+    margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid #986794;
+    z-index: -1;
+}
+.ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+}
+.ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #F08080 transparent transparent transparent;
+    bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
 }
